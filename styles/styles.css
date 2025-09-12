@@ -80,4 +80,16 @@ line-height:1.5;
 /* Антипаттерн: селектор тяжёлый и хрупкий */ 
 #header .menu .item a{ color:#333; } 
 /* Хорошо: опора на БЭМ-класс компонента */ 
-.site-nav__link{ color:var(--color-fg); } 
+.site-nav__link{ color:var(--color-fg); }
+
+.hero{ 
+background-image: 
+linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,.15)), 
+image-set( 
+url("../assets/bg-img.jpg") 1x,   /* обычные экраны */ 
+url("../assets/bg-img.jpg") 2x    /* плотные экраны */ 
+); 
+background-position:center; 
+background-size:cover; 
+background-repeat:no-repeat; 
+} 

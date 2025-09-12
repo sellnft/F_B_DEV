@@ -42,7 +42,12 @@
         <h1>Добро пожаловать на наш сайт!</h1> 
         <!-- Секция 1 с якорем --> 
         <section id="services"> 
-            <h2>Наши услуги</h2> 
+            <h2>Наши услуги</h2>
+            <!-- Браузер сам выбирает лучший ресурс по ширине контейнера --> 
+        <img src="../assets/meme.jpg" srcset="../assets/meme.jpg 640w, ../assets/meme.jpg 960w, 
+        ../assets/meme.jpg 1280w" sizes="(max-width: 700px) 92vw, 
+        (max-width: 1200px) 640px, 960px" 
+        alt="Проект: макет мобильного приложения" loading="lazy">  
             <p>Описание предоставляемых услуг...</p> 
             <a href="#contacts">Связаться с нами</a> <!-- Якорная ссылка внутри страницы --> 
         </section> 
@@ -55,9 +60,19 @@
         <section id="contacts"> 
             <h2>Контактная информация</h2> 
             <p>Наши контакты...</p> 
-    </main> 
+     
             <a href="contacts.html">Подробнее</a> <!-- Ссылка на отдельную страницу --> 
-        </section> 
+        </section>
+        <!-- Добавьте субтитры через <track> (WebVTT); poster — превью-кадр --> 
+        <video class="media" controls preload="metadata" playsinline 
+        width="960" height="540" poster="../assets/preview.png" muted autoplay loop> 
+        <source src="../assets/sigma-video.mp4" type="video/mp4">   <!-- основной 
+формат -->
+        <track kind="captions" srclang="ru" src="video/captions-ru.vtt" 
+        label="Русские субтитры" default> 
+        Ваш браузер не поддерживает видео. 
+        </video>
+        </main>
     <!-- Подвал сайта --> 
     <footer> 
         <p>&copy; 2025 F_B_DEV. Все права защищены.</p> 
