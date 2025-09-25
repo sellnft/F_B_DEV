@@ -1,4 +1,4 @@
- <!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="ru"> 
 <head> 
     <meta charset="UTF-8"> 
@@ -10,7 +10,7 @@
     <title>О нас - F_B_DEV</title> 
     <meta name="description" content="Узнайте больше о нашей компании и истории"> 
 </head> 
-<body>
+<body class="hero">
     <button class="theme-toggle" type="button" aria-pressed="false">Тема</button> 
     <script defer> 
         const KEY='theme', btn=document.querySelector('.theme-toggle'); 
@@ -28,6 +28,7 @@
         localStorage.setItem(KEY, isDark ? 'dark' : 'light'); 
         }); 
     </script>  
+    <main class="wrapper">
     <header class="site-header">
         <a class="site-header__brand" href="http://127.0.0.1:3000/src/index.html">F_B_DEV</a>  
         <nav class="site-nav" aria-label="Основная навигация"> 
@@ -38,7 +39,6 @@
             </ul> 
         </nav> 
     </header> 
-    <main>
         <!-- Простые "хлебные крошки" --> 
         <nav aria-label="Хлебные крошки"> 
             <a href="index.html">Главная</a> → 
@@ -52,11 +52,11 @@
         <section> 
             <h2>Наша команда</h2> 
             <p>Текст о команде...</p> 
-        </section> 
-    </main> 
-    <footer> 
+        </section>  
+    <footer class="site-footer">
         <p>&copy; 2023 F_B_DEV. Все права защищены.</p> 
         <p>Телефон: +7 (777) 777-77-77</p> 
-    </footer> 
-</body> 
+    </footer>
+</main>
+</body>
 </html> 

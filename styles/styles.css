@@ -93,3 +93,19 @@ background-position:center;
 background-size:cover; 
 background-repeat:no-repeat; 
 } 
+
+.site-nav__item {
+	list-style-type: none;
+}
+.site-services__img {
+	min-width: 1000px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.site-footer {
+	margin-top: auto;
+}
